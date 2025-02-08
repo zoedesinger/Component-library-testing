@@ -1,0 +1,494 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif, arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Button Styles */
+button {
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    padding: 0;
+    font-family: 'Poppins', sans-serif, arial; /* Explicitly define Poppins */
+}
+
+/* Button Sizes */
+button.large {
+    height: 48px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button.medium {
+    height: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button.small {
+    height: 32px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* Home and Business Primary */
+button.primary {
+    background-color: #216CE0;
+    color: white;
+    border: none;
+}
+
+button.primary:hover {
+    background-color: #1350BA;
+}
+
+button.primary.disabled {
+    background-color: #A1D0FF;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+button.primary.loading {
+    background-color: #A1D0FF;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Secondary Button */
+button.secondary {
+    background-color: white;
+    color: #216CE0;
+    border: 1px solid #216CE0; /* 1px border */
+}
+
+button.secondary:hover {
+    background-color: #F0F8FF;
+    color: #1350BA;
+}
+
+button.secondary.disabled {
+    background-color:#FFFFFF;
+    border: 1px solid #C9E6FF; /* 1px border */
+    color: #75B3FA;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+    
+}
+
+button.secondary.loading {
+    border: 1px solid #C9E6FF; /* 1px border */
+    color: #75B3FA;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Dshed Button */
+button.dshed {
+    border: 1px dashed #216CE0; /* 1px dashed border */
+    color: #216CE0;
+    background-color: white;
+}
+
+button.dshed:hover {
+    background-color: #F0F8FF;
+    color: #1350BA;
+}
+
+button.dshed.disabled {
+    background-color:#FFFFFF;
+    border: 1px dashed #A1D0FF; /* 1px dashed border */
+    color: #A1D0FF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+button.dshed.loading {
+    background-color:#FFFFFF;
+    border: 1px dashed #A1D0FF; /* 1px dashed border */
+    color: #A1D0FF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Danger Button */
+button.danger {
+    background-color: #FF0F41;
+    color: white;
+    border: none;
+}
+
+button.danger:hover {
+    background-color: #D90234;
+}
+
+button.danger.disabled {
+    background-color: #FFB3B8;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Text Button */
+button.text {
+    background: none;
+    border: none;
+    color: #216CE0;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+}
+
+button.text:hover {
+    color: #1350BA;
+}
+
+button.text.disabled {
+    color: #A0A7B1;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Personl */
+button.primary.personal {
+    background-color: #FF6C33;
+    color: white;
+    border: none;
+}
+
+button.primary.personal:hover {
+    background-color: #D94F21;
+}
+
+button.primary.personal.disabled {
+    background-color: #FFCDAD;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+button.primary.personal.loading {
+    background-color: #FFCDAD;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Secondary Button */
+button.secondary.personal {
+    background-color: white;
+    color: #21272F;
+    border: 1px solid #21272F; /* 1px border */
+}
+
+button.secondary.personal:hover {
+    background-color: #21272F;
+    color: #FFFFFF;
+}
+
+button.secondary.personal.disabled {
+    background-color:#FFFFFF;
+    border: 1px solid #D6D9DE; /* 1px border */
+    color: #A0A7B1;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+    
+}
+
+button.secondary.personal.loading {
+    background-color:#FFFFFF;
+    border: 1px solid #D6D9DE; /* 1px border */
+    color: #A0A7B1;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Dshed Button */
+button.dshed.personal {
+    background-color:#FFFFFF;
+    border: 1px dashed #21272F; /* 1px dashed border */
+    color: #21272F;
+}
+
+button.dshed.personal:hover {
+    background-color: #21272F;
+    color: #FFFFFF;
+}
+
+button.dshed.personal.disabled {
+    background-color:#FFFFFF;
+    border: 1px dashed #D6D9DE; /* 1px dashed border */
+    color: #A0A7B1;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+button.dshed.personal.loading {
+    background-color:#FFFFFF;
+    border: 1px dashed #D6D9DE; /* 1px dashed border */
+    color: #A0A7B1;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Danger Button */
+button.danger.personal {
+    background-color: #FF0F41;
+    color: white;
+    border: none;
+}
+
+button.danger.personal:hover {
+    background-color: #D90234;
+}
+
+button.danger.personal.disabled {
+    background-color: #FFB3B8;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Text Button */
+button.text.personal {
+    background: none;
+    border: none;
+    color: #FF6C33;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+}
+
+button.text.personal:hover {
+    color: #D94F21;
+}
+
+button.text.personal.disabled {
+    color: #A0A7B1;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Cast */
+button.primary.cast {
+    background-color: #42C662;
+    color: white;
+    border: none;
+}
+
+button.primary.cast:hover {
+    background-color: #2DA14E;
+}
+
+button.primary.cast.disabled {
+    background-color: #C0EDC7;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+button.primary.cast.loading {
+    background-color: #C0EDC7;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Secondary Button */
+button.secondary.cast {
+    background-color: white;
+    color: #42C662;
+    border: 1px solid #42C662; /* 1px border */
+}
+
+button.secondary.cast:hover {
+    background-color: #F0FFF1;
+    color: #2DA14E;
+    border: 1px solid #2DA14E
+}
+
+button.secondary.cast.disabled {
+    background-color:#FFFFFF;
+    border: 1px solid #C0EDC7; /* 1px border */
+    color: #92E0A0;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+    
+}
+
+button.secondary.cast.loading {
+    background-color:#FFFFFF;
+    border: 1px solid #C0EDC7; /* 1px border */
+    color: #92E0A0;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Dshed Button */
+button.dshed.cast {
+    background-color:#FFFFFF;
+    border: 1px dashed #42C662; /* 1px dashed border */
+    color: #42C662;
+}
+
+button.dshed.cast:hover {
+    background-color:#F0FFF1;
+    border: 1px dashed #2DA14E; /* 1px dashed border */
+    color: #2DA14E;
+}
+
+button.dshed.cast.disabled {
+    background-color:#FFFFFF;
+    border: 1px dashed #C0EDC7; /* 1px dashed border */
+    color: #92E0A0;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+button.dshed.cast.loading {
+    background-color:#FFFFFF;
+    border: 1px dashed #C0EDC7; /* 1px dashed border */
+    color: #92E0A0;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Danger Button */
+button.danger.cast {
+    background-color: #FF0F41;
+    color: white;
+    border: none;
+}
+
+button.danger.cast:hover {
+    background-color: #D90234;
+}
+
+button.danger.cast.disabled {
+    background-color: #FFB3B8;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Text Button */
+button.text.cast {
+    background: none;
+    border: none;
+    color: #42C662;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+}
+
+button.text.cast:hover {
+    color: #2DA14E;
+}
+
+button.text.cast.disabled {
+    color: #A0A7B1;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Kid */
+button.primary.kid {
+    background-color: #446EFC;
+    color: white;
+    border: none;
+}
+
+button.primary.kid:hover {
+    background-color: #2F51D6;
+}
+
+button.primary.kid.disabled {
+    background-color: #BFD4FF;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+button.primary.kid.loading {
+    background-color: #BFD4FF;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Secondary Button */
+button.secondary.kid {
+    background-color: white;
+    color: #446EFC;
+    border: 1px solid #446EFC; /* 1px border */
+}
+
+button.secondary.kid:hover {
+    background-color: #F0F6FF;
+    color: #2F51D6;
+    border: 1px solid #2F51D6;
+}
+
+button.secondary.kid.disabled {
+    background-color:#FFFFFF;
+    border: 1px solid #E8F0FF; /* 1px border */
+    color: #96B6FF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+button.secondary.kid.loading {
+    background-color:#FFFFFF;
+    border: 1px solid #E8F0FF; /* 1px border */
+    color: #96B6FF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Dshed Button */
+button.dshed.kid {
+    background-color:#FFFFFF;
+    border: 1px dashed #446EFC; /* 1px dashed border */
+    color: #446EFC;
+}
+
+button.dshed.kid:hover {
+    background-color:#F0F6FF;
+    border: 1px dashed #2F51D6; /* 1px dashed border */
+    color: #2F51D6;
+}
+
+button.dshed.kid.disabled {
+    background-color:#FFFFFF;
+    border: 1px dashed #E8F0FF; /* 1px dashed border */
+    color: #96B6FF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+button.dshed.kid.loading {
+    background-color:#FFFFFF;
+    border: 1px dashed #E8F0FF; /* 1px dashed border */
+    color: #96B6FF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Danger Button */
+button.danger.kid {
+    background-color: #FF0F41;
+    color: white;
+    border: none;
+}
+
+button.danger.kid:hover {
+    background-color: #D90234;
+}
+
+button.danger.kid.disabled {
+    background-color: #FFB3B8;
+    color: #FFFFFF;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
+
+/* Text Button */
+button.text.kid {
+    background: none;
+    border: none;
+    color: #446EFC;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+}
+
+button.text.kid:hover {
+    color: #2F51D6;
+}
+
+button.text.kid.disabled {
+    color: #A0A7B1;
+    cursor: not-allowed; /* 保持禁用状态的鼠标样式 */
+}
