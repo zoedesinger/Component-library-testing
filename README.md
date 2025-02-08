@@ -1,10 +1,3 @@
-# Component Library
+# 🚀这是一个测试的组件库
 
-This is a reusable component library for designers and developers. Below you will find usage instructions.
-
-## 🚀 Installation
-
-To use this component library, include the CSS file in your project:
-
-```html
-<link rel="stylesheet" href="">
+随便试一下呢
